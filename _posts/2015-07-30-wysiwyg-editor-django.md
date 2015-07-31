@@ -17,6 +17,7 @@ In this post I will install and configure django-ckeditor.
 
 Step 1:
 Install django-ckeditor app using pip.
+
 {% highlight ruby linenos %}
 pip install django-ckeditor
 {% endhighlight %}
@@ -26,6 +27,7 @@ Add ckeditor to <strong>INSTALLED_APPS</strong> in settings.py file.
 
 Step 3:
 Add the following lines to your settings file.
+
 {% highlight ruby linenos %}
 CKEDITOR_UPLOAD_PATH = "uploads/"
 CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'
@@ -33,12 +35,14 @@ CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.j
 
 Step 4:
 Update your project's urls.py file with the below line.
+
 {% highlight ruby linenos %}
 url(r'^ckeditor/', include('ckeditor.urls')),
 {% endhighlight %}
 
 Step 5:
 Modify your models.py file and change your model fields.
+
 {% highlight ruby linenos %}
 from ckeditor.fields import RichTextField
 class BlogPost(models.Model):
@@ -52,6 +56,7 @@ class BlogPost(models.Model):
 
 Step 6:
 Now run the following django commands.
+
 {% highlight ruby linenos %}
 python manage.py makemigrations
 python manage.py migrate
