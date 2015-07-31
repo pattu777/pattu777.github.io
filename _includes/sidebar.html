@@ -1,0 +1,19 @@
+<nav>
+  <h1>Ahoj.</h1>
+  <a href="/">
+    {% if site.data.theme.social.gravatar %}
+    <img src="http://www.gravatar.com/avatar/{{ site.data.theme.social.gravatar }}?s=200" id="gravatar" alt="My photo"/>
+    {% else %}
+    <img src="/Me.png" id="logo" alt="Blog logo"/>
+    {% endif %}
+  </a>
+  <h2>I'm <a href="/">{{ site.data.theme.name }}</a>.</h2>
+  <div id="bio">
+    <!-- <p>I am a Computer Science Master's student at the Faculty of Mathematics and Physics at Charles University in Prague, Czech Republic. I was born and raised in Berhampur, India but moved to Prague in October, 2014.
+    
+    Currently I am working as a software engineering intern at Concur Technologies. Previously I had also worked as a Software Engineer for a cloud management startup, "Xervmon" in Bangalore, India. I love programming. Primarily I work in Python. Check out my Blog for more information.</p> -->
+  </div>
+  <div id="social">
+    {% include social.html %}
+  </div>
+</nav>

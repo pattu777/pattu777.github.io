@@ -1,0 +1,23 @@
+# General Jekyll Config
+highlighter: pygments
+url: http://pattu777.github.io
+lsi: false
+exclude: [LICENSE, CNAME, README.md, .gitignore, Gemfile, Gemfile.lock]
+
+# About/contact
+author:
+  name: Chinmaya
+  url: http://pattu777.github.io
+  email: patanaikchinmaya@gmail.com
+
+# Setup
+title: Blog
+tagname: Chinmaya's Tech Blog
+url: http://pattu777.github.io
+paginate: 10
+markdown: rdiscount
+#permalink: retty
+highlighter: true
+baseurl: ""
+
+
