@@ -9,8 +9,8 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
     <a class="sidebar-nav-item" href="/about/">About</a>
+    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Blog</a>
 
     <!--
     {% assign pages_list = site.pages | sort:"url" %}
@@ -32,5 +32,6 @@
     <p>
       &copy; {{ site.time | date: '%Y' }}. Made with love in Prague.
     </p>
+
   </div>
 </div>

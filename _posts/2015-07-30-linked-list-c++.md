@@ -146,4 +146,3 @@ void LinkedList :: search(int num)
 {% endhighlight %}
 
 That's it. The average time of insertion, deletion and search in a singly linked list is O(n).
-[^fn-sample_footnote]: Handy! Now click the return link to go back.

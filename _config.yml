@@ -8,7 +8,7 @@ relative_permalinks: true
 title:               Chinmaya Kr. Patanaik
 tagline:             ""
 description:         "Master's student, Barca Fan, Python Enthusiast"
-url:                 http://pattu777.github.io
+url:                 'https://pattu777.github.io'
 baseurl:             ''
 paginate:            5
 
@@ -18,6 +18,14 @@ author:
   url:               https://pattu777.github.com/pattu777.github.io
   email:             patanaikchinmaya@gmail.com
   gravatar:          https://s.gravatar.com/avatar/b5a0ac48d1b8836dc6f679a9003d0dcf?s=80
+
+# Profile links on the left sidebar, leave blank to ignore
+social:
+  github: pattu777
+  #hacker_news: pattu777
+  twitter: CPatanaik
+  linkedin: chinmayakrpatanaik
+  gravatar: b5a0ac48d1b8836dc6f679a9003d0dcf
 
 # Custom vars
 version:             1.0.0
