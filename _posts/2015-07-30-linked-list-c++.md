@@ -32,13 +32,13 @@ class LinkedList
 private:
     Node* head;
 public:
-    LinkedList();                                  // constructor.
-    ~LinkedList();                                 // Destructor.
+    LinkedList();                           // constructor.
+    ~LinkedList();                          // Destructor.
     void display();
     void search(int);
-    void insert_at_head(int);                      // Insert an element at the head.
-    void insert_after_node(Node*, int);            // Insert an element after a certain node.
-    void insert_at_tail(int);                      // Insert an element at the tail.
+    void insert_at_head(int);               // Insert an element at the head.
+    void insert_after_node(Node*, int);     // Insert an element after a certain node.
+    void insert_at_tail(int);               // Insert an element at the tail.
 };
 
 LinkedList :: LinkedList()
