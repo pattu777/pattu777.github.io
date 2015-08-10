@@ -24,7 +24,7 @@ struct Node
 };
 {% endhighlight %}
 
-Now let's define a linked list class and some functions to add elements to it.
+Now let's define a linked list class and implement some common functionalities.
 
 {% highlight ruby linenos %}
 class LinkedList
@@ -32,13 +32,13 @@ class LinkedList
 private:
     Node* head;
 public:
-    LinkedList();                           // constructor.
-    ~LinkedList();                          // Destructor.
+    LinkedList();                        
+    ~LinkedList();                      
     void display();
     void search(int);
-    void insert_at_head(int);               // Insert an element at the head.
-    void insert_after_node(Node*, int);     // Insert an element after a certain node.
-    void insert_at_tail(int);               // Insert an element at the tail.
+    void insert_at_head(int);               
+    void insert_after_node(Node*, int);   
+    void insert_at_tail(int);              
 };
 
 LinkedList :: LinkedList()
@@ -50,6 +50,7 @@ LinkedList :: ~LinkedList()
 {
 }
 
+// Add a node at the head.
 void LinkedList :: insert_at_head(int num)
 {
     Node* tmp = new Node;
@@ -58,6 +59,7 @@ void LinkedList :: insert_at_head(int num)
     head = tmp;
 }
 
+// Insert a node after a certain node.
 void LinkedList :: insert_after_node(Node* ptr, int num)
 {
     if(head == NULL)
@@ -78,6 +80,7 @@ void LinkedList :: insert_after_node(Node* ptr, int num)
     }
 }
 
+// Insert a node at the end of the list.
 void LinkedList :: insert_at_tail(int num)
 {
     if(head == NULL)
