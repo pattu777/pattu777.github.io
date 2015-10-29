@@ -7,7 +7,7 @@ I love programming and solving challenging problems. Primarily I work with Pytho
 
 Some of my recent projects are:
 
-* [Task list web app](https://github.com/pattu777/Idea-List)
+* [Task list web app](https://github.com/pattu777/TaskList)
 * [Personal website and blog using Django and bootstrap](https://github.com/pattu777/MySite)
 
 I have also started solving algorithmic problems. I hope to write more about it on my blog.
