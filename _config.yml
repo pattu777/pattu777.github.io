@@ -29,3 +29,4 @@ social:
 
 # Custom vars
 version:             1.0.0
+enable_disqus: true
