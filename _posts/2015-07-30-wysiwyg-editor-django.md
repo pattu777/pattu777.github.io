@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Adding a WYSIWYG Editor to your Django app.
+comments: true
 ---
 
 One of the most useful features of Django is it's admin interface. But the standard plain textarea is really hard to handle. So my first technical blog post will deal with adding a rich HTML editor to an existing django app.
@@ -10,8 +11,8 @@ Some of the common django based WYSIWYG editor apps are listed below.
 1. django-ckeditor
 2. django-summernote
 3. django-tinymce
-4. django-wysiwyg 
-5. django-wysiwyg-redactor 
+4. django-wysiwyg
+5. django-wysiwyg-redactor
 
 In this post I will install and configure django-ckeditor.
 
@@ -49,7 +50,7 @@ class BlogPost(models.Model):
     author = models.CharFIeld(max_length=30)
     title = models.CharField(max_length=50)
     description = RichTextField()
-    
+
     def __unicode__(self):
         return self.title
 {% endhighlight %}

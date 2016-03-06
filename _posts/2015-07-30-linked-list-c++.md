@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Implementing a singly linked list in C++. 
+title: Implementing a singly linked list in C++.
+comments: true
 ---
 
 In this post, I will try to implement a singly linked list using C++.
@@ -44,7 +45,7 @@ public:
 LinkedList :: LinkedList()
 {
     head = NULL;
-} 
+}
 
 LinkedList :: ~LinkedList()
 {
