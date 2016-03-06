@@ -14,7 +14,7 @@ There are various kinds of linked lists such as singly linked list, doubly linke
 
 A node of a singly linked list containing integers is as shown below.
 
-{% highlight ruby linenos %}
+```
 ---------------
 | Data | next |
 ---------------  
@@ -23,11 +23,11 @@ struct Node
     int data;
     Node* next;
 };
-{% endhighlight %}
+```
 
 Now let's define a linked list class and implement some common functionalities.
 
-{% highlight ruby linenos %}
+```
 class LinkedList
 {
 private:
@@ -101,11 +101,11 @@ void LinkedList :: insert_at_tail(int num)
         tmp->next = new_node;
     }
 }
-{% endhighlight %}
+```
 
 Now let's finish off the display and search function.
 
-{% highlight ruby linenos %}
+```
 void LinkedList :: display()
 {
     if(head == NULL)
@@ -147,6 +147,6 @@ void LinkedList :: search(int num)
         std::cout << "NOT FOUND" << std::endl;
     }
 }
-{% endhighlight %}
+```
 
 That's it. The average time of insertion, deletion and search in a singly linked list is O(n).

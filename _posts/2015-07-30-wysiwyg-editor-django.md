@@ -19,9 +19,9 @@ In this post I will install and configure django-ckeditor.
 Step 1:
 Install django-ckeditor app using pip.
 
-{% highlight ruby linenos %}
+```python
 pip install django-ckeditor
-{% endhighlight %}
+```
 
 Step 2:
 Add ckeditor to <strong>INSTALLED_APPS</strong> in settings.py file.
@@ -29,22 +29,22 @@ Add ckeditor to <strong>INSTALLED_APPS</strong> in settings.py file.
 Step 3:
 Add the following lines to your settings file.
 
-{% highlight ruby linenos %}
+```javascript
 CKEDITOR_UPLOAD_PATH = "uploads/"
 CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'
-{% endhighlight %}
+```
 
 Step 4:
 Update your project's urls.py file with the below line.
 
-{% highlight ruby linenos %}
+```python
 url(r'^ckeditor/', include('ckeditor.urls')),
-{% endhighlight %}
+```
 
 Step 5:
 Modify your models.py file and change your model fields.
 
-{% highlight ruby linenos %}
+```python
 from ckeditor.fields import RichTextField
 class BlogPost(models.Model):
     author = models.CharFIeld(max_length=30)
@@ -53,17 +53,17 @@ class BlogPost(models.Model):
 
     def __unicode__(self):
         return self.title
-{% endhighlight %}
+```
 
 Step 6:
 Now run the following django commands.
 
-{% highlight ruby linenos %}
+```
 python manage.py makemigrations
 python manage.py migrate
 python manage.py collectstatic
 python manage.py runserver
-{% endhighlight %}
+```
 
 Done. Now open up your browser and go to the link 127.0.0.1:8000/admin. Log in to the admin account using your superuser name and password.
 
