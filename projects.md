@@ -7,8 +7,8 @@ I love programming and solving challenging problems. Primarily I work with Pytho
 
 Some of my recent projects are:
 
-* [Lucy](https://github.com/pattu777/Lucy)
-* [Realtime Markdown Viewer](https://github.com/pattu777/Markdown-Editor)
-* [Blog and URL Shortener](https://github.com/pattu777/LearningDjango/)
+* [Lucy](https://github.com/pattu777/Lucy) - A CLI tool to generate software licenses.
+* [Markdown Editor](https://github.com/pattu777/Markdown-Editor) - A real time Markdown viewer that I built while learning Node.js.
+* [Blog and URL Shortener](https://github.com/pattu777/LearningDjango/) - Apps that I built while learning Django.
 
 I hope to write more posts about technology and algorithms on my blog in future.
