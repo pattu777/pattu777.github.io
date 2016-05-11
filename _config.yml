@@ -2,6 +2,7 @@
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
+markdown: kramdown
 
 # Setup
 title:               Chinmaya Kr. Patanaik
@@ -27,4 +28,9 @@ social:
   gravatar: b5a0ac48d1b8836dc6f679a9003d0dcf
 
 # Custom vars
-version:             1.0.0
+version:             1.0.04
+gems: [jekyll-paginate]
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+highlighter: rouge
