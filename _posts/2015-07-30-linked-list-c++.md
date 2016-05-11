@@ -6,15 +6,14 @@ comments: true
 
 In this post, I will try to implement a singly linked list using C++.
 
-Linked List:
-
-It's a kind of data structure where information is stored in a node and the nodes are grouped together in a sequence. Typically a node consists of a data and reference part where the reference pointer contains the address of a different node.
+# Linked List
+> In computer science, a linked list is a linear collection of data elements, called nodes pointing to the next node by means of a pointer. It is a data structure consisting of a group of nodes which together represent a sequence. Under the simplest form, each node is composed of data and a reference (in other words, a link) to the next node in the sequence; more complex variants add additional links. [^1]
 
 There are various kinds of linked lists such as singly linked list, doubly linked list, circular linked list etc.
 
-A node of a singly linked list containing integers is as shown below.
+A node of a singly linked list containing integer data is as shown below.
 
-```
+```c++
 ---------------
 | Data | next |
 ---------------  
@@ -27,7 +26,7 @@ struct Node
 
 Now let's define a linked list class and implement some common functionalities.
 
-```
+```c++
 class LinkedList
 {
 private:
@@ -50,7 +49,11 @@ LinkedList :: LinkedList()
 LinkedList :: ~LinkedList()
 {
 }
+```
 
+Inserting a node at the head is trivial. But while inserting a node at the end, we will have to move our pointer to the last element of the list. Then we can insert a new node after that element and point it's next pointer to NULL.
+
+```c++
 // Add a node at the head.
 void LinkedList :: insert_at_head(int num)
 {
@@ -103,9 +106,9 @@ void LinkedList :: insert_at_tail(int num)
 }
 ```
 
-Now let's finish off the display and search function.
+In case of search functionality, we will have to traverse the list from head to the last element untill we find a match.
 
-```
+```c++
 void LinkedList :: display()
 {
     if(head == NULL)
@@ -149,4 +152,10 @@ void LinkedList :: search(int num)
 }
 ```
 
-That's it. The average time of insertion, deletion and search in a singly linked list is O(n).
+That's it.
+
+* __The average time for searching an element is `O(n)`__.
+* __The average time of inserting an element at the head is `O(1)`__.
+* __The average time for removing an element from the head is `O(1)`__.
+
+[^1]: [https://en.wikipedia.org/wiki/Linked_list](https://en.wikipedia.org/wiki/Linked_list)
