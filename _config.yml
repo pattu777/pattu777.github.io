@@ -29,8 +29,17 @@ social:
 
 # Custom vars
 version:             1.0.04
-gems: [jekyll-paginate]
+gems: [jekyll-paginate, jekyll-sitemap]
 kramdown:
   input: GFM
   syntax_highlighter: rouge
 highlighter: rouge
+
+# Settings for analytics helper
+# Set 'provider' to the analytics provider you want to use.
+# Set 'provider' to false to turn analytics off globally.
+#
+analytics :
+  provider : google
+  google :
+      tracking_id : 'UA-78081906-1'
