@@ -2,6 +2,11 @@
 layout: post
 title: Learning Ansible - Installing packages on a remote server.
 comments: true
+tags:
+  - Ansible
+  - Linux
+  - Devops
+  - Cloud server
 ---
 
 Recently I bought a droplet from DigitalOcean. Luckily I also got the first two months free of charge. Now the next step was to configure the server. As I am currently learning Ansible, in this post I will describe how to execute certain tasks on a remote server using it.

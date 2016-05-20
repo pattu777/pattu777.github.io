@@ -2,6 +2,10 @@
 layout: post
 title: Implementing a singly linked list in C++.
 comments: true
+tags:
+  - Linked List
+  - Data structure
+  - C++
 ---
 
 In this post, I will try to implement a singly linked list using C++.

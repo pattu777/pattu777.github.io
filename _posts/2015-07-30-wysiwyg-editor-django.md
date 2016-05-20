@@ -2,6 +2,10 @@
 layout: post
 title: Adding a WYSIWYG Editor to your Django app.
 comments: true
+tags:
+  - Django
+  - ckeditor
+  - Python
 ---
 
 One of the most useful features of Django is it's admin interface. But the standard plain textarea is really hard to handle. So my first technical blog post will deal with adding a rich HTML editor to an existing django app.
