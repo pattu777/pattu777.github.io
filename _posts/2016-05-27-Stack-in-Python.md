@@ -4,7 +4,7 @@ title: Implementing a Stack in Python.
 comments: true
 ---
 
-As a continuation of some of my previous posts regarding data structures, in this post I will try to implement a `Stack` in Python.
+In previous posts, I have implemented a binary search tree and a singly linked list. In this post I will try to implement a `Stack` in Python.
 
 ## Stack:
 
@@ -12,7 +12,7 @@ As a continuation of some of my previous posts regarding data structures, in thi
 
 Basically there are two ways to represent a stack.
 
-* As an arrays.
+* As an array.
 * As a singly linked list.
 
 Here I will try to implement an array based stack. Now let's define a stack class.
@@ -40,7 +40,7 @@ class Stack(object):
         # Code below
 ```
 
-The code is pretty fairly straight forward. The `__init__` function is the constructor of `Stack` class. `size` represents the maximum number of elements which the stack can contain. `current_length` holds the number of elements present in the stack. And the array `arr` holds the actual elements of the stack.
+The code is fairly straight forward. The `__init__` function is the constructor of `Stack` class. `size` represents the maximum number of elements which the stack can contain. `current_length` holds the number of elements present in the stack. And the array `arr` holds the actual elements of the stack.
 
 Now let's implement the basic operations one by one.
 
