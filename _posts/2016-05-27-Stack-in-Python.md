@@ -40,7 +40,7 @@ class Stack(object):
         # Code below
 ```
 
-The code is pretty fairly straight forward. The `__init__` function is the constructor of `Stack` class. __size__ represents the maximum number of elements which the stack can contain. __current_length__ holds the number of elements present in the stack. And the array __arr__ holds the actual elements of the stack.
+The code is pretty fairly straight forward. The `__init__` function is the constructor of `Stack` class. `size` represents the maximum number of elements which the stack can contain. `current_length` holds the number of elements present in the stack. And the array `arr` holds the actual elements of the stack.
 
 Now let's implement the basic operations one by one.
 
