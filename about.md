@@ -11,4 +11,4 @@ I am a software engineer. Currently I am also enrolled in the master's program i
 
 Recently I worked as a software engineering intern in the ExpenseIt team at Concur Technologies. Previously I also worked as a software engineer for a cloud management startup, "Xervmon" in Bangalore, India. You can find my CV [here](https://drive.google.com/file/d/0BwFCuugUZy8hRkdKRVI4ZzB6ekU/view?usp=sharing).
 
-I can also be reached at [Twitter](https://twitter.com/CPatanaik) or [Linkedin](https://cz.linkedin.com/in/chinmayakrpatanaik).
+I can also be contacted via [Twitter](https://twitter.com/CPatanaik) or [Linkedin](https://cz.linkedin.com/in/chinmayakrpatanaik).

@@ -13,14 +13,21 @@ Some of my recent projects are:
   * Built with Python and uses Github v3 API.
   * Github Repo - [https://github.com/pattu777/Lucy](https://github.com/pattu777/Lucy)
 
-* __LearningDjango__
+* __Learning Django__
 
   * Apps that I built while learning Django.
   * Deployed on a Digital Ocean server using Ansible.
   * Live Demo - [http://www.learningdjango.in](http://www.learningdjango.in)
   * Github Repo - [https://github.com/pattu777/LearningDjango/](https://github.com/pattu777/LearningDjango/)
 
-* __Ansible-Playground__
+* __Algorithms and Data Structures__
+
+    * Implementation of various data structures.
+    * Written in Python and Java.
+    * Github Repo - [https://github.com/pattu777/Algorithms-and-Data-structures](https://github.com/pattu777/Algorithms-and-Data-structures)
+
+
+* __Ansible Playground__
 
   * A set of playbooks to automate server setup.
   * Github Repo - [https://github.com/pattu777/Ansible-Playground](https://github.com/pattu777/Ansible-Playground)
