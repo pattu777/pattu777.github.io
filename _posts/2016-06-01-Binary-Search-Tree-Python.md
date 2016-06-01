@@ -304,7 +304,7 @@ I haven't implemented how to remove a node from the bst. As it's a little bit co
 * __The average time of removal is `O(logn)` and `O(n)` in worst case.__
 * __Average time for search is `O(logn)` and `O(n)` in worst case.__
 
-This code along with all other data structure implementations is available on my [Github repository](https://github.com/pattu777/Algorithms-and-Data-structures). That's it. :sparkles
+This code along with all other data structure implementations is available on my [Github repository](https://github.com/pattu777/Algorithms-and-Data-structures). That's it. 
 
 [^1]: [http://docs.python-guide.org/en/latest/writing/tests/](http://docs.python-guide.org/en/latest/writing/tests/)
 [^2]: [https://en.wikipedia.org/wiki/Binary_search_tree](https://en.wikipedia.org/wiki/Binary_search_tree)

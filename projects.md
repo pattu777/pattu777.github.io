@@ -22,7 +22,7 @@ Some of my recent projects are:
 
 * __Algorithms and Data Structures__
 
-    * Implementation of various data structures.
+    * Implementation of various data structures with unit tests.
     * Written in Python and Java.
     * Github Repo - [https://github.com/pattu777/Algorithms-and-Data-structures](https://github.com/pattu777/Algorithms-and-Data-structures)
 

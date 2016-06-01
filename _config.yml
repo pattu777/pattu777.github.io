@@ -29,7 +29,7 @@ social:
 
 # Custom vars
 version:             1.0.04
-gems: [jekyll-paginate, jekyll-sitemap]
+gems: [jekyll-paginate, jekyll-sitemap, jemoji]
 kramdown:
   input: GFM
   syntax_highlighter: rouge
