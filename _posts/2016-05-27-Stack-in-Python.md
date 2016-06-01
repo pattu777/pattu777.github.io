@@ -99,11 +99,11 @@ def is_full(self):
     return len(self.arr) == self.size
 ```
 
-That's it.
+That's it. :relieved:
 
-* The average time of insertion is `O(1)`.
-* The average time of removal is `O(1)`.
-* Average time for search is `O(n)`.
+* __The average time of insertion is `O(1)`.__
+* __The average time of removal is `O(1)`.__
+* __Average time for search is `O(n)`.__
 
 The entire source code is available on my Github repository.[^2]
 
