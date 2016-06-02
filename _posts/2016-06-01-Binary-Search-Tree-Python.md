@@ -3,7 +3,7 @@ layout: post
 title: Binary search tree in Python with simple unit tests.
 comments: true
 ---
-Last week I was reading an article about testing in Python.[^1] It explained about various testing frameworks available in Python(`unittest`, `py.test`, `nose` etc.) with some examples. It was a really interesting article. So In this post I will try to implement a binary search tree and write some simple unit tests using the `unittest` library in Python.
+Last week I was reading an article about testing in Python.[^1] It explained about various testing frameworks available in Python(`unittest`, `py.test`, `nose` etc.) with some examples. It was a really interesting article. So in this post I will try to implement a binary search tree and write some simple unit tests using the `unittest` library in Python.
 
 ### Binary Search Tree
 > A binary search tree (BST) is a binary tree where each node has a Comparable key (and an associated value) and satisfies the restriction that the key in any node is larger than the keys in all nodes in that node's left subtree and smaller than the keys in all nodes in that node's right subtree.[^2]
@@ -71,7 +71,7 @@ class BinarySearchTree(object):
         # Code below
 ```
 
-The only thing to note is that I made the `root` of tree `None` in the constructor `__init__` function. Now it's time to implement common operation like insertion, searching, traversal etc.
+The only thing to note is that I made the `root` of the tree `None` in the constructor `__init__` function. Now it's time to implement common operation like insertion, searching, traversal etc.
 
 #### Insert an element
 
@@ -135,9 +135,9 @@ def search(self, node, item):
        if node.data == item:
            return True
        elif node.data < item:
-           node = node.right
+           return self.search(node.right, item)
        else:
-           node = node.left
+           return self.search(node.left, item)
 ```
 
 #### Get the number of elements
@@ -178,7 +178,7 @@ def postorder(self, node):
 
 #### Fetch the minimum element
 ```
-Function get_minimum():
+Function get_minimum(root):
 =======================
 
 1. If root is None, return None.
@@ -188,7 +188,7 @@ Function get_minimum():
 ```
 
 ```python
-def min(self, node):
+def get_min(self, node):
     if node.left is None:
         return node.data
     else:
@@ -197,7 +197,7 @@ def min(self, node):
 
 #### Fetch the maximum element
 ```
-Function get_maximum():
+Function get_maximum(root):
 =======================
 
 1. If root is None, return None.
@@ -208,7 +208,7 @@ Function get_maximum():
 ```
 
 ```python
-def max(self, node):
+def get_max(self, node):
     if self.root is None:
         return "Tree is empty."
     else:
@@ -304,7 +304,7 @@ I haven't implemented how to remove a node from the bst. As it's a little bit co
 * __The average time of removal is `O(logn)` and `O(n)` in worst case.__
 * __Average time for search is `O(logn)` and `O(n)` in worst case.__
 
-This code along with all other data structure implementations is available on my [Github repository](https://github.com/pattu777/Algorithms-and-Data-structures). That's it. 
+This code along with all other data structure implementations is available on my [Github repository](https://github.com/pattu777/Algorithms-and-Data-structures). That's it.
 
 [^1]: [http://docs.python-guide.org/en/latest/writing/tests/](http://docs.python-guide.org/en/latest/writing/tests/)
 [^2]: [https://en.wikipedia.org/wiki/Binary_search_tree](https://en.wikipedia.org/wiki/Binary_search_tree)
