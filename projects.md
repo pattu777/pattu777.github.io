@@ -17,7 +17,7 @@ Some of my recent projects are:
 
   * Apps that I built while learning Django.
   * Deployed on a Digital Ocean server using Ansible.
-  * Live Demo - [http://www.learningdjango.in](http://www.learningdjango.in)
+  * Live Demo - [learningdjango.in](learningdjango.in)
   * Github Repo - [https://github.com/pattu777/LearningDjango/](https://github.com/pattu777/LearningDjango/)
 
 * __Algorithms and Data Structures__
