@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Useful Git commands
-comments: false
+comments: true
 ---
 
 So I have been using Git for a while now. Considering it's the only version control system I know, I use it for all my projects. But I realize most of my knowledge of Git revolves around just a couple of commands.
