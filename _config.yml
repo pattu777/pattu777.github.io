@@ -7,7 +7,7 @@ markdown: kramdown
 # Setup
 title:               Chinmaya's Blog
 tagline:             ""
-description:         "Master's student, Budding Full Stack Developer, Barca Fan"
+description:         "Budding Full Stack Developer, Barca Fan, Looking for a junior or new grad position"
 url:                 'http://chinmayapatanaik.com'
 baseurl:             ''
 paginate:            7
@@ -29,7 +29,7 @@ social:
 
 # Custom vars
 version:             1.0.04
-gems: [jekyll-paginate, jekyll-sitemap, jemoji]
+gems: [jekyll-paginate, jekyll-sitemap, jemoji, jekyll-feed]
 kramdown:
   input: GFM
   syntax_highlighter: rouge
