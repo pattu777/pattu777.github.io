@@ -75,7 +75,6 @@ Usually we come across some files which we don't want to be part of Git, such as
 
 * Adding them to a `.gitignore` file.
 * Not adding them in `git add` command.
-* Or simply deleting them.
 
 I might be missing some other simpler methods. But below I will show one more method to untrack those files without deleting them.
 
