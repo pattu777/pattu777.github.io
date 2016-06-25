@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ansible playbook to deploy a Django project
-comments: false
+title: Ansible playbooks to deploy a Django project - Part 1
+comments: true
 ---
 
 Two weeks back, I started learning Django. I built a `polls` app by following the tutorial from Django's website[^1]. Later I also built a blog using it. My code is available at [https://github.com/pattu777/LearningDjango](https://github.com/pattu777/LearningDjango).
 
-But I also wanted to know how a Django project is typically deployed on a remote server. I went through a couple of blogs describing the process[^2]. And I thought of automating this deployment process.
+But I also wanted to know how a Django project is typically deployed on a remote server. I read a couple of blogs about the deployment process[^2]. And I thought of automating it using Ansible.
 
-So I ended up writing Ansible playbooks to accomplish this. I bought a domain name [learningdjango.in](learningdjango.in) from GoDaddy and a cheap server from Digital Ocean to host my project. Please use my [referral link](https://m.do.co/c/9373dbe909b4) if you want to sign up on Digital Ocean.
+So I ended up writing a bunch of Ansible playbooks to accomplish this. I bought a domain name `learningdjango.in` from GoDaddy and a cheap server from Digital Ocean to host my project. Please use my [__referral link__](https://m.do.co/c/9373dbe909b4) if you want to sign up with Digital Ocean. So in this post I will describe
 
 # Prerequisites
 * A remote server.
@@ -19,9 +19,9 @@ So I ended up writing Ansible playbooks to accomplish this. I bought a domain na
 * A custom domain pointing to your cloud server(Optional). This domain name is used while configuring Nginx.
 
 # Architecture
-First and foremost let's see how our deployment architecture looks like. So we have our Django project on a remote server. We will use `Gunicorn` as our app server. In development we often use Django's builtin server. But in production, it's not advisable to use it. We will run `Gunicorn` on port `8000`.
+First and foremost let's see how our deployment architecture looks like. So we have our Django project on a remote server. We will use __`Gunicorn`__ as our app server. In development we often use Django's builtin server. But in production, it's not advisable to use it. We will run __`Gunicorn`__ on port __`8000`__.
 
-Next we will use `Nginx` as a reverse proxy. Let me explain what it'll do. From browser when we visit `learningdjango.in`, the browser will send a HTTP request to our server. Now `Nginx` will accept this request and simply forward it to our `Gunicorn` server running at port 8000. Apart from this, Nginx will also serve all the static(CSS, JS files) and media assets. We will provide path to our static files in `Nginx` config file. We will run `Nginx` on port `80`.
+Next we will use __`Nginx`__ as a reverse proxy server. Let me explain what it'll do. From browser when we visit [http://learningdjango.in](http://learningdjango.in), the browser will send a HTTP request to our server. Now __`Nginx`__ will accept this request and simply forward it to our __`Gunicorn`__ server running at port __`8000`__. Apart from this, __`Nginx`__ will also serve all the static(CSS, JS files) and media assets of our Django project. We will provide path to our static files in __`Nginx`__ config file. We will run __`Nginx`__ on port __`80`__.
 
 Now let's create a new directory to save our playbooks.
 
@@ -85,7 +85,7 @@ As seen above, `deploy.yml` file contains three roles.
 * The role `django` will execute Django specific tasks such as migration, collection of static files etc.
 * The role `services` will configure and run gunicorn and Nginx.
 
-Now create individual directories for each of the roles as shown below. Don't worry about the YAML files in tasks and vars folder inside each roles. We will talk about them later.
+Now create individual directories for each of the roles as shown below. Don't worry about the YAML files in tasks and vars folder inside each roles. We will talk about them later. I have also added a `README` and a `LICENSE` file.
 
 ```bash
 $ tree
@@ -128,7 +128,7 @@ Each role contains multiple directories.
 * `templates` - Jinja templates used in plays.
 * `handlers` - Playbooks which are triggered once a certain task is completed from the main YAML file from `tasks` directory.
 
-### Install necessary packages.
+# Install necessary packages.
 
 In our first role `core`, we will install some system packages on our server. The list of package names are present in `core/vars/main.yml` file.
 
@@ -162,7 +162,7 @@ In `core/tasks/main.yml`, we will write a task that will loop through these pack
 - name: Install system packages
   apt: pkg={{ item }} update_cache=yes state=present
   with_items:
-      - "{{ system_packages }}"
+      - {% raw %}"{{ system_packages }}"{% endraw %}
 
 - name: Update pip
   pip: name=pip state=latest
