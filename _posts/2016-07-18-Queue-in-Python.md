@@ -6,9 +6,9 @@ comments: true
 
 # Queue:
 
-> In computer science, a queue is a particular kind of abstract data type or collection in which the entities in the collection are kept in order and the principal (or only) operations on the collection are the addition of entities to the rear terminal position, known as enqueue, and removal of entities from the front terminal position, known as dequeue. This makes the queue a First-In-First-Out (FIFO) data structure. In a FIFO data structure, the first element added to the queue will be the first one to be removed. This is equivalent to the requirement that once a new element is added, all elements that were added before have to be removed before the new element can be removed. Often a peek or front operation is also entered, returning the value of the front element without dequeuing it. A queue is an example of a linear data structure, or more abstractly a sequential collection. [^1]
+> In computer science, a queue is a particular kind of abstract data type or collection in which the entities in the collection are kept in order and the principal (or only) operations on the collection are the addition of entities to the rear terminal position, known as enqueue, and removal of entities from the front terminal position, known as dequeue. [^1]
 
-Similar to a stack, a queue can be represented in the following two ways.
+A queue is a First-In-First-Out (FIFO) data structure. It means the first element added to the queue will be the first one to be removed. Similar to a stack, a queue can be implemented in the following two ways.
 
 * As an array.
 * As a singly linked list.
@@ -22,34 +22,22 @@ class Queue(object):
         self.arr = []
 
     def enqueue(self, item):
-        if self.is_full():
-            print "Queue is full."
-        else:
-            self.arr.append(item)
+        # Code below.
 
     def dequeue(self):
-        if self.is_empty():
-            print "Queue is empty."
-        else:
-            self.arr.pop(0)
+        # Code below.
 
     def is_empty(self):
-        return len(self.arr) == 0
+        # Code below.
 
     def is_full(self):
-        return len(self.arr) == self.size
+        # Code below.
 
     def front(self):
-        if self.is_empty():
-            print "Queue is empty."
-        else:
-            print self.arr[0]
+        # Code below.
 
     def rear(self):
-        if self.is_empty():
-            print "Queue is empty."
-        else:
-            print self.arr[len(self.arr)-1]
+        # Code below.
 ```
 
 The code is fairly straight forward. The `__init__` function is the constructor of `Queue` class. `size` represents the maximum number of elements which the queue can contain. And the array `arr` holds the actual elements of the queue.
