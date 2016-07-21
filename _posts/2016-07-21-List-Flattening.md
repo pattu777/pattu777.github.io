@@ -18,7 +18,7 @@ def flatten(data):
       result = []
       for item in data:
         if isinstance(item, list):
-          yield result.extend(flatten(item))
+          result.extend(flatten(item))
         elif item != '':
           result.append(item)
       return result
