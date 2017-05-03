@@ -3,12 +3,24 @@ layout: page
 title: Ahoj, I'm Chinmaya.
 ---
 
-<p class="message">
-    And those who were seen dancing were thought to be insane by those who could not hear the music. - Friedrich Nietzsche
-</p>
+I am a software engineer. Currently I am also enrolled in the master's program in computer science at Charles University in Prague, Czech Republic. I was born and raised in a small town called Berhampur in the south-eastern part of India.
 
-I am a software engineer. Currently I am also enrolled in the master's program in computer science at Charles University in Prague, Czech Republic. I was born and raised in a small town called Berhampur in the south-eastern part of India but moved to Prague in 2014.
+Recently I worked as a software engineering intern in the ExpenseIt team at Concur Technologies. Previously I also worked as a software engineer for a cloud management startup, "Xervmon" in Bangalore, India. You can find my resume from the sidebar.
 
-Recently I worked as a software engineering intern in the ExpenseIt team at Concur Technologies. Previously I also worked as a software engineer for a cloud management startup, "Xervmon" in Bangalore, India. You can find my CV [here](https://drive.google.com/file/d/0BwFCuugUZy8hRkdKRVI4ZzB6ekU/view?usp=sharing).
+## Skills I know(Actively learning)
+* Python
+* Django
+* JavaScript
+* MySQL
+* Version Control with git
+* Deployment with Ansible
+* A little bit of front-end with Bootstrap
+* Sublime Text3 and Vim for text editing
+* Linux(Ubuntu)
 
-I can also be contacted via [Twitter](https://twitter.com/CPatanaik) or [Linkedin](https://cz.linkedin.com/in/chinmayakrpatanaik).
+Currently I am looking for full time opportunities. If you like my profile, reach out to me.
+
+* Email - [patanaikchinmaya@gmail.com](mailto:patanaikchinmaya@gmail.com)
+* Twitter - [@CPatanaik](https://twitter.com/CPatanaik)
+* Linkedin - [ChinmayaKrPatanaik](http://www.linkedin.com/in/chinmayakrpatanaik)
+* Skype - chinmaya_patanaik

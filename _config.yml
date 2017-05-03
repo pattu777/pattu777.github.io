@@ -7,7 +7,7 @@ markdown: kramdown
 # Setup
 title:               Chinmaya's Blog
 tagline:             ""
-description:         "Budding Full Stack Developer, Barca Fan, Looking for a junior or new grad position"
+description:         "Budding Full Stack Developer, Barca Fan"
 url:                 'http://chinmayapatanaik.com'
 baseurl:             ''
 paginate:            7

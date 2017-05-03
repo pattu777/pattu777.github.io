@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Useful Git commands
+title: Useful Git commands - Part 1
 comments: true
 ---
 
