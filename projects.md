@@ -5,17 +5,7 @@ title: Projects
 
 I love programming and solving challenging problems. Mainly I work with Python. Recently I have started learning Django and web development.
 
-Inspired by Jennifer Dewalt's [blog](https://jenniferdewalt.com/), I have decided to build one project per week in Django. I will also start writing blog posts about it in future.
-
-Some of my recent projects are:
-
-* __Learning Django__
-
-  * Apps that I built while learning Django.
-  * The target is to build one Django project per week.
-  * Deployed on a Digital Ocean server using Ansible.
-  * Live Demo - [http://learningdjango.in](http://learningdjango.in)
-  * Github Repo - [https://github.com/pattu777/LearningDjango/](https://github.com/pattu777/LearningDjango/)
+Some of my projects are:
 
 * __Ansible Django__
 
