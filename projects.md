@@ -25,9 +25,3 @@ Some of my projects are:
     * Implementation of various data structures with unit tests.
     * Written in Python and Java.
     * Github Repo - [https://github.com/pattu777/Algorithms-and-Data-structures](https://github.com/pattu777/Algorithms-and-Data-structures)
-
-* __Markdown Editor__
-
-  * A real time Markdown viewer that I built while learning JavaScript.
-  * Built with Node.js.
-  * Github Repo - [https://github.com/pattu777/Markdown-Editor](https://github.com/pattu777/Markdown-Editor)
