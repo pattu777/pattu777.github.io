@@ -8,14 +8,14 @@ markdown: kramdown
 title:               Chinmaya's Blog
 tagline:             ""
 description:         "Budding Full Stack Developer, Barca Fan"
-url:                 'http://chinmayapatanaik.com'
+url:                 'http://chinmayakrpatanaik.com'
 baseurl:             ''
 paginate:            7
 
 # About/contact
 author:
   name:              Chinmaya Kr. Patanaik
-  url:               http://chinmayapatanaik.com
+  url:               http://chinmayakrpatanaik.com
   email:             patanaikchinmaya@gmail.com
   gravatar:          https://s.gravatar.com/avatar/b5a0ac48d1b8836dc6f679a9003d0dcf?s=80
 
